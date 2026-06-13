@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <html data-theme="corporate"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookWorms</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+  
+    <div class="navbar bg-base-80 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a href="index.html" target="_self">Nossa Missão</a></li>
+            <li>
+              <a>Mais</a>
+              <ul class="p-2">
+                <li><a href="consultar.html" target="_self">Consultar Caronas</a></li>
+                <li><a href="oferecer.html" target="_self">Ver Prévias</a></li>
+              </ul>
+            </li>
+            <li><a href="sobre.html" target="_self">Sobre Nós</a></li>
+          </ul>
+        </div>
+        <a href="index.html" target="_self" class="btn btn-ghost hover:bg-transparent normal-case btn-lg flex items-center gap-1 px-5">
+            <img src="img/bookworm_logo2.png" alt="BookWorm" class="w-20 h-20 object-contain scale-[1.8]">
+            <span class="text-4xl font-bold">
+                Book<span style="color: #3D842F;">Worms</span>
+            </span>
+        </a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html" target="_self">Nossa Missão</a></li>
+          <li>
+            <details>
+              <summary>Mais</summary>
+              <ul class="p-2 bg-base-100 w-40 z-1">
+                <li><a href="consultar.html" target="_self">Consultar Caronas</a></li>
+                <li><a href="oferecer.html" target="_self">Ver Prévias</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="sobre.html" target="_self">Sobre Nós</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end">
+        <a class="btn btn-success" href="oferecer.html" target="_self">Ver Prévia</a>
+      </div>
+      <div style="padding: 10px"></div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS Navbar component"
+              src="https://img.freepik.com/vetores-gratis/circulos-de-utilizadores-definidos_78370-4704.jpg?semt=ais_hybrid&w=740&q=80"
+            />
+          </div>
+        </div>
+        <ul
+          tabindex="-1"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+        >
+          <li>
+            <a href="login.html" target="_self" class="justify-between">
+              Perfil
+              <span class="badge">Login</span>
+            </a>
+          </li>
+          <li><a>Configurações</a></li>
+          <li><a>Sair</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="hero bg-base-200 min-h-[60vh]" style="margin-top: 20px;">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img
+            src="img/bookworm_logo2.png"
+            class="max-w-2xl rounded-lg shadow-2xl"
+        />
+        <div>
+          <h1 class="text-5xl font-bold"> frase de efeito </h1>
+          <p class="py-6">
+            
+          </p>
+          <button class="btn btn-success btn-lg px-5 py-3 fs-4"  target="_self"> Ver Prévia </button>
+        </div>
+      </div>
+    </div>
+
+    
+
+ 
+    <div class="carousel w-[100%] space-x-4" style="padding: 20px; margin-left: 20px; margin-right: 20px;">
+
+      <div class="carousel-item">
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure class="h-48 overflow-hidden">
+              <img
+                src="img/app_home.png"
+                alt="UEM"
+                class="w-full h-full object-cover" />
+            </figure>
+            
+            <div class="card-body">
+              <h2 class="card-title"> HOME </h2>
+            </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure class="h-48 overflow-hidden">
+              <img
+                src="img/app_leaderboard.png"
+                alt="Unicesumar" 
+                class="w-full h-full object-cover" />
+            </figure>
+            
+            <div class="card-body">
+              <h2 class="card-title"> RANKS </h2>
+            </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure class="h-48 overflow-hidden">
+              <img
+                src="img/app_challenges.png"
+                alt="Challenges" 
+                class="w-full h-full object-cover" />
+            </figure>
+            
+            <div class="card-body">
+              <h2 class="card-title"> CHALLENGES </h2>
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure class="h-48 overflow-hidden">
+              <img
+                src="img/app_profile.png"
+                alt="Perfil" 
+                class="w-full h-full object-cover"/>
+            </figure>
+            
+            <div class="card-body">
+              <h2 class="card-title"> Perfil </h2>
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <figure class="h-48 overflow-hidden">
+              <img
+                src="img/app_checkpoints.png"
+                alt="Checkpoints" 
+                class="w-full h-full object-cover"/>
+            </figure>
+            
+            <div class="card-body">
+              <h2 class="card-title"> Checkpoints </h2>
+            </div>
+        </div>
+      </div>
+      <br>
+</div>
+
+    <div id="card-carona">
+        <span class="text-rotate text-7xl fast-rotate">
+        <span class="justify-items-center">
+          <span>BOOK</span>
+          <span>WORMS</span>
+        </span>
+        </span>
+        <div id="texto">
+          <p> Aplicativo que estimula a leitura por meio de competições entre pessoas, sejam elas amigas ou desconhecidas! </p>
+        </div>
+        <a href="oferecer.html">
+          <button class="btn btn-sm join-item text-lg h-10 px-6">Ver Prévia</button>
+        </a>
+      </div>
+
+
+    <footer
+      class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10" style="justify-content: space-around;"
+    >
+      <nav>
+        <h6 class="footer-title">Serviços</h6>
+        <a class="link link-hover"><a href="consultar.html" target="_self">Consultar Caronas</a>
+        <a class="link link-hover"><a href="oferecer.html" target="_self">Ver Prévia</a>
+        <a class="link link-hover">Visualizar Motorista</a>
+        <a class="link link-hover">Seu Perfil</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Companhia</h6>
+        <a class="link link-hover"><a href="sobre.html" target="_self">Sobre Nós</a>
+        <a class="link link-hover">Contato</a>
+        <a class="link link-hover">Trabalho</a>
+        <a class="link link-hover">Segurança</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Termos Legais</h6>
+        <a class="link link-hover">Termos de uso</a>
+        <a class="link link-hover">Política de Privacidade</a>
+        <a class="link link-hover">Política de Cookies</a>
+      </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js"></script>
+  </body>
+</html> 
