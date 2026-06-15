@@ -71,6 +71,22 @@ body {
   background: #3D842F !important;
 }
 
+.missaoSwiper{
+    width:100%;
+    height:500px;
+}
+
+.missaoSwiper .hero{
+    width:100%;
+    height:500px;
+    background-size:cover;
+    background-position:center;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: #3D842F !important;
+}
 
 /*CELULAR*/
 
@@ -96,14 +112,15 @@ body {
 
 /*CARDS*/
 
-.carousel-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 300px;
+.card-hover{
+    height:260px;
+    transition:.3s;
+    display:flex;
+    flex-shrink:0;
 }
 
-.carousel-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+.card-hover:hover{
+    transform:translateY(-10px);
 }
 
 
@@ -118,6 +135,13 @@ body {
 
 .btn {
   border-radius: 25px;
+}
+
+
+/* MATERIAS */
+
+.materias-section span {
+  color: #3D842F;
 }
 
 
@@ -147,26 +171,131 @@ body {
 }
 
 
-/*RESPONSIVIDADE DO SITE PARA CELULAR*/
+/*RESPONSIVIDADE - MOBILE (320px - 480px)*/
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   body {
-    width: 95%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar-start a {
+    padding: 0.5rem;
+  }
+
+  .navbar-start img {
+    width: 12px !important;
+    height: 12px !important;
+    scale: 1 !important;
+  }
+
+  .navbar-start span {
+    font-size: 1.25rem !important;
+  }
+
+  .btn-success {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
   }
 
   .hero-section {
     flex-direction: column;
-    padding: 30px 10px;
-    gap: 40px;
+    padding: 1rem 0.75rem;
+    gap: 1.5rem;
     text-align: center;
     align-items: center;
   }
 
   .hero-text {
     background-color: #d2f0cc;
-    padding: 40px 20px;
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+    gap: 1rem;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero-titulo {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hero-subtitulo {
+    font-size: 0.875rem;
+  }
+
+  .mySwiper {
+    width: 200px;
+    height: 420px;
+  }
+
+  .phone {
+    width: 160px;
+    height: 340px;
+  }
+
+  .carousel-item {
+    min-width: 200px;
+    height: 250px;
+  }
+
+  .carousel {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  #prototipo {
+    padding: 1.5rem 1rem;
+    margin: 0.75rem;
+    border-radius: 15px;
+  }
+
+  #texto {
+    font-size: 0.875rem;
+  }
+
+  .text-7xl {
+    font-size: 2rem !important;
+  }
+
+  .footer {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .footer nav {
+    margin-bottom: 1rem;
+  }
+}
+
+/*RESPONSIVIDADE - TABLET PEQUENO (481px - 768px)*/
+
+@media (max-width: 768px) {
+  body {
+    width: 95%;
+  }
+
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-text {
+    background-color: #d2f0cc;
+    padding: 2rem 1.5rem;
     border-radius: 20px;
-    gap: 30px;
+    gap: 1.5rem;
     align-items: center;
     max-width: 100%;
   }
@@ -175,13 +304,105 @@ body {
     font-size: 2rem;
   }
 
+  .hero-subtitulo {
+    font-size: 0.95rem;
+  }
+
   .mySwiper {
-    width: 280px;
-    height: 520px;
+    width: 240px;
+    height: 500px;
   }
 
   .phone {
     width: 200px;
     height: 420px;
+  }
+
+  .carousel-item {
+    min-width: 240px;
+    height: 280px;
+  }
+
+  #prototipo {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/*RESPONSIVIDADE - TABLET (769px - 1024px)*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    width: 90%;
+  }
+
+  .hero-section {
+    gap: 3rem;
+    padding: 3rem 2rem;
+  }
+
+  .hero-titulo {
+    font-size: 2.5rem;
+  }
+
+  .mySwiper {
+    width: 260px;
+    height: 540px;
+  }
+
+  .phone {
+    width: 220px;
+    height: 460px;
+  }
+
+  .carousel-item {
+    min-width: 280px;
+  }
+}
+
+/*RESPONSIVIDADE - DESKTOP (1025px+)*/
+
+@media (min-width: 1025px) {
+  body {
+    width: 85%;
+  }
+
+  .hero-section {
+    padding: 3rem 2rem 3rem 8rem;
+    gap: 4rem;
+  }
+
+  .hero-titulo {
+    font-size: 3rem;
+  }
+
+  .mySwiper {
+    width: 280px;
+    height: 580px;
+  }
+
+  .phone {
+    width: 240px;
+    height: 500px;
+  }
+
+  .carousel-item {
+    min-width: 320px;
+  }
+}
+
+/*RESPONSIVIDADE - GRANDE DESKTOP (1400px+)*/
+
+@media (min-width: 1400px) {
+  body {
+    width: 80%;
+  }
+
+  .hero-section {
+    padding: 4rem 2rem 4rem 10rem;
   }
 }
