@@ -1,4 +1,4 @@
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".phoneSwiper", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 1,

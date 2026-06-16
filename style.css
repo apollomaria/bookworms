@@ -1,4 +1,4 @@
-body {
+body{
   display: flex;
   flex-direction: column;
   width: 75%;
@@ -8,7 +8,7 @@ body {
 }
 
 
-.hero-section {
+.hero-section{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
 }
 
-.hero-text {
+.hero-text{
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -26,41 +26,41 @@ body {
   max-width: 420px;
 }
 
-.hero-titulo {
+.hero-titulo{
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.2;
 }
 
-.destaque {
+.destaque{
   color: #3D842F;
 }
 
-.hero-subtitulo {
+.hero-subtitulo{
   font-size: 1.1rem;
   color: #555;
   line-height: 1.6;
 }
 
-.mySwiper {
+.phoneSwiper{
   width: 280px;
   height: 580px;
   flex-shrink: 0;
   overflow: hidden;
 }
 
-.swiper-slide {
+.swiper-slide{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100% !important;
 }
 
-.swiper-wrapper {
+.swiper-wrapper{
   align-items: center;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active{
   background: #3D842F !important;
 }
 
@@ -81,7 +81,7 @@ body {
   color: #3D842F !important;
 }
 
-.phone {
+.phone{
   width: 240px;
   height: 500px;
   background: #111;
@@ -93,7 +93,7 @@ body {
   margin: 0 auto;
 }
 
-.phone img {
+.phone img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -115,22 +115,22 @@ body {
     transform:translateY(-10px);
 }
 
-.input {
+.input{
   border-radius: 25px;
   background-color: #ecfdea;
   color: #062000;
   border-color: #3D842F;
 }
 
-.btn {
+.btn{
   border-radius: 25px;
 }
 
-.materias-section span {
+.materias-section span{
   color: #3D842F;
 }
 
-#prototipo {
+#prototipo{
   background-color: #3D842F;
   color: white;
   width: 100%;
@@ -144,11 +144,11 @@ body {
   margin: 20px;
 }
 
-.fast-rotate {
+.fast-rotate{
   animation-duration: 1s !important;
 }
 
-#texto {
+#texto{
   text-align: center;
   font-size: 18px;
 }
@@ -157,35 +157,35 @@ body {
 /*(Celular) até 480px*/
 
 @media (min-width: 300px) and (max-width: 480px){
-  body {
+  body{
     width: 100%;
     padding: 0;
   }
 
-  .navbar {
+  .navbar{
     padding: 0.5rem 0.75rem;
   }
 
-  .navbar-start a {
+  .navbar-start a{
     padding: 0.5rem;
   }
 
-  .navbar-start img {
+  .navbar-start img{
     width: 12px !important;
     height: 12px !important;
     scale: 1 !important;
   }
 
-  .navbar-start span {
+  .navbar-start span{
     font-size: 1.25rem !important;
   }
 
-  .btn-success {
+  .btn-success{
     font-size: 0.75rem;
     padding: 0.4rem 0.8rem;
   }
 
-  .hero-section {
+  .hero-section{
     flex-direction: column;
     padding: 1rem 0.75rem;
     gap: 1.5rem;
@@ -193,7 +193,7 @@ body {
     align-items: center;
   }
 
-  .hero-text {
+  .hero-text{
     background-color: #d2f0cc;
     padding: 1.5rem 1rem;
     border-radius: 15px;
@@ -203,38 +203,38 @@ body {
     width: 100%;
   }
 
-  .hero-titulo {
+  .hero-titulo{
     font-size: 1.5rem;
     line-height: 1.3;
   }
 
-  .hero-subtitulo {
+  .hero-subtitulo{
     font-size: 0.875rem;
   }
 
-  .mySwiper {
+  .phoneSwiper{
     width: 200px;
     height: 420px;
   }
 
-  .phone {
+  .phone{
     width: 160px;
     height: 340px;
   }
 
-  .carousel-item {
+  .carousel-item{
     width: 85%;
     flex-shrink: 0;
     min-width: 200px;
     height: 250px;
   }
 
-  .carousel {
+  .carousel{
     padding: 0.75rem;
     gap: 0.75rem;
   }
 
-  #prototipo {
+  #prototipo{
     padding: 1.5rem 1rem;
     margin: 0.75rem;
     border-radius: 15px;
@@ -259,19 +259,19 @@ body {
     font-size: 0.7rem;
   }
 
-  #texto {
+  #texto{
     font-size: 0.875rem;
   }
 
-  .text-7xl {
+  .text-7xl{
     font-size: 2rem !important;
   }
 
-  .footer {
+  .footer{
     padding: 1.5rem 0.75rem;
   }
 
-  .footer nav {
+  .footer nav{
     margin-bottom: 1rem;
   }
 }
@@ -279,15 +279,15 @@ body {
 /* Até 768px */
 
 @media (max-width: 768px){
-  body {
+  body{
     width: 95%;
   }
 
-  .navbar {
+  .navbar{
     padding: 0.75rem 1rem;
   }
 
-  .hero-section {
+  .hero-section{
     flex-direction: column;
     padding: 2rem 1rem;
     gap: 2rem;
@@ -295,7 +295,7 @@ body {
     align-items: center;
   }
 
-  .hero-text {
+  .hero-text{
     background-color: #d2f0cc;
     padding: 2rem 1.5rem;
     border-radius: 20px;
@@ -304,34 +304,34 @@ body {
     max-width: 100%;
   }
 
-  .hero-titulo {
+  .hero-titulo{
     font-size: 2rem;
   }
 
-  .hero-subtitulo {
+  .hero-subtitulo{
     font-size: 0.95rem;
   }
 
-  .mySwiper {
+  .phoneSwiper{
     width: 240px;
     height: 500px;
   }
 
-  .phone {
+  .phone{
     width: 200px;
     height: 420px;
   }
 
-  .carousel-item {
+  .carousel-item{
     min-width: 240px;
     height: 280px;
   }
 
-  #prototipo {
+  #prototipo{
     padding: 2rem 1.5rem;
   }
 
-  .footer {
+  .footer{
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -344,26 +344,26 @@ body {
     width: 90%;
   }
 
-  .hero-section {
+  .hero-section{
     gap: 3rem;
     padding: 3rem 2rem;
   }
 
-  .hero-titulo {
+  .hero-titulo{
     font-size: 2.5rem;
   }
 
-  .mySwiper {
+  .phoneSwiper{
     width: 260px;
     height: 540px;
   }
 
-  .phone {
+  .phone{
     width: 220px;
     height: 460px;
   }
 
-  .carousel-item {
+  .carousel-item{
     min-width: 280px;
   }
 }
@@ -371,30 +371,30 @@ body {
 /*Para desktop, apartir de 1025px*/
 
 @media (min-width: 1025px) {
-  body {
+  body{
     width: 85%;
   }
 
-  .hero-section {
+  .hero-section{
     padding: 3rem 2rem 3rem 8rem;
     gap: 4rem;
   }
 
-  .hero-titulo {
+  .hero-titulo{
     font-size: 3rem;
   }
 
-  .mySwiper {
+  .phoneSwiper{
     width: 280px;
     height: 580px;
   }
 
-  .phone {
+  .phone{
     width: 240px;
     height: 500px;
   }
 
-  .carousel-item {
+  .carousel-item{
     min-width: 320px;
   }
 }
@@ -402,11 +402,11 @@ body {
 /*Apartir de 1400px*/
 
 @media (min-width: 1400px){
-  body {
+  body{
     width: 80%;
   }
 
-  .hero-section {
+  .hero-section{
     padding: 4rem 2rem 4rem 10rem;
   }
 }
