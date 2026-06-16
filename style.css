@@ -154,9 +154,9 @@ body {
 }
 
 /*Responsividade do site*/
-/*(Celular) até 375px*/
+/*(Celular) até 480px*/
 
-@media (max-width: 375px) {
+@media (min-width: 300px) and (max-width: 480px){
   body {
     width: 100%;
     padding: 0;
@@ -278,7 +278,7 @@ body {
 
 /* Até 768px */
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
   body {
     width: 95%;
   }
@@ -339,7 +339,7 @@ body {
 
 /* De 769px até 1024px */
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px){
   body {
     width: 90%;
   }
@@ -401,7 +401,7 @@ body {
 
 /*Apartir de 1400px*/
 
-@media (min-width: 1400px) {
+@media (min-width: 1400px){
   body {
     width: 80%;
   }
