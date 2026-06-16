@@ -154,9 +154,9 @@ body {
 }
 
 /*Responsividade do site*/
-/*(Celular) até 480px*/
+/*(Celular) até 375px*/
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   body {
     width: 100%;
     padding: 0;
