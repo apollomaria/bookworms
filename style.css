@@ -1,5 +1,3 @@
-/*LAYOUT GERAL*/
-
 body {
   display: flex;
   flex-direction: column;
@@ -9,8 +7,6 @@ body {
   align-items: center;
 }
 
-
-/*HERO SECTION*/
 
 .hero-section {
   display: flex;
@@ -45,9 +41,6 @@ body {
   color: #555;
   line-height: 1.6;
 }
-
-
-/*SWIPER*/
 
 .mySwiper {
   width: 280px;
@@ -88,8 +81,6 @@ body {
   color: #3D842F !important;
 }
 
-/*CELULAR*/
-
 .phone {
   width: 240px;
   height: 500px;
@@ -109,22 +100,20 @@ body {
   border-radius: 30px;
 }
 
-
-/*CARDS*/
-
 .card-hover{
     height:260px;
     transition:.3s;
     display:flex;
     flex-shrink:0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-hover:hover{
     transform:translateY(-10px);
 }
-
-
-/*COMPONENTES*/
 
 .input {
   border-radius: 25px;
@@ -137,15 +126,9 @@ body {
   border-radius: 25px;
 }
 
-
-/* MATERIAS */
-
 .materias-section span {
   color: #3D842F;
 }
-
-
-/*BLOCO SOBRE O PROTÓTIPO*/
 
 #prototipo {
   background-color: #3D842F;
@@ -170,8 +153,8 @@ body {
   font-size: 18px;
 }
 
-
-/*RESPONSIVIDADE - MOBILE (320px - 480px)*/
+/*Responsividade do site*/
+/*(Celular) até 480px*/
 
 @media (max-width: 480px) {
   body {
@@ -240,6 +223,8 @@ body {
   }
 
   .carousel-item {
+    width: 85%;
+    flex-shrink: 0;
     min-width: 200px;
     height: 250px;
   }
@@ -253,6 +238,25 @@ body {
     padding: 1.5rem 1rem;
     margin: 0.75rem;
     border-radius: 15px;
+  }
+
+  .card-hover{
+    height: 250px;
+    padding: 12px;
+  }
+
+  .card-hover h2{
+    font-size: 1.1 rem;
+  }
+
+  .card-hover p{
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .card-hover .btn{
+    padding: 10px 5px;
+    font-size: 0.7rem;
   }
 
   #texto {
@@ -272,7 +276,7 @@ body {
   }
 }
 
-/*RESPONSIVIDADE - TABLET PEQUENO (481px - 768px)*/
+/* Até 768px */
 
 @media (max-width: 768px) {
   body {
@@ -333,7 +337,7 @@ body {
   }
 }
 
-/*RESPONSIVIDADE - TABLET (769px - 1024px)*/
+/* De 769px até 1024px */
 
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
@@ -364,7 +368,7 @@ body {
   }
 }
 
-/*RESPONSIVIDADE - DESKTOP (1025px+)*/
+/*Para desktop, apartir de 1025px*/
 
 @media (min-width: 1025px) {
   body {
@@ -395,7 +399,7 @@ body {
   }
 }
 
-/*RESPONSIVIDADE - GRANDE DESKTOP (1400px+)*/
+/*Apartir de 1400px*/
 
 @media (min-width: 1400px) {
   body {

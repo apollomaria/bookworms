@@ -11,9 +11,8 @@ const swiper = new Swiper(".mySwiper", {
   loop: true,
 });
 
-const missaoSwiper = new Swiper(".missaoSwiper", {
+const missaoSwiper = new Swiper(".missaoSwiper",{
     loop: true,
-
     effect: "fade",
 
     navigation: {
